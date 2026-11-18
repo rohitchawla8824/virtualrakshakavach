@@ -105,7 +105,7 @@ deployments** use:
 | Root directory         | repository root (`/`)                                         |
 | Build command          | `npm ci && npm run build:client`                              |
 | Build output directory | `client/dist`                                                 |
-| Node.js build version  | `22.12.0` (or a tested compatible version at least `22.12.0`) |
+| Node.js build version  | `24.11.1` (or a tested compatible Node 24 LTS patch) |
 
 Set these Pages variables:
 

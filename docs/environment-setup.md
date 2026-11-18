@@ -26,7 +26,7 @@ repository or print secret values in deployment logs.
 | Name                           | Value / rule                                                                                     | Secret?                                             |
 | ------------------------------ | ------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
 | `NODE_ENV`                     | `production`                                                                                     | No                                                  |
-| `NODE_VERSION`                 | `22.12.0` or a tested compatible version at least `22.12.0`                                      | No                                                  |
+| `NODE_VERSION`                 | `24.11.1` or a tested compatible Node 24 LTS patch                                                | No                                                  |
 | `HOST`                         | `0.0.0.0` (Render public services require this bind address)                                     | No                                                  |
 | `PORT`                         | Leave unset; Render injects the listener port                                                    | No                                                  |
 | `MONGODB_URI`                  | Atlas demo-cluster URI; URL-encode reserved credential characters; use a least-privilege DB user | **Yes**                                             |
@@ -67,7 +67,7 @@ branches disconnected from the demo database unless they have an isolated databa
 
 | Name                | Value                                         | Purpose                                                   |
 | ------------------- | --------------------------------------------- | --------------------------------------------------------- |
-| `NODE_VERSION`      | `22.12.0` (or tested compatible >= `22.12.0`) | Pages build runtime                                       |
+| `NODE_VERSION`      | `24.11.1` (or tested compatible Node 24 LTS patch) | Pages build runtime                                       |
 | `VITE_API_BASE_URL` | `/api/v1`                                     | Public build-time API path; deliberately same-origin      |
 | `API_ORIGIN`        | `https://<service>.onrender.com`              | Pages Function upstream; runtime variable, no credentials |
 
