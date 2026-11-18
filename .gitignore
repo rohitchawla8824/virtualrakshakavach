@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output and coverage
+dist/
+**/dist/
+coverage/
+**/coverage/
+
+# Local environment and secrets (keep examples versioned)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Editor and OS state
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Tool caches
+.eslintcache
+.prettiercache
+.vite/
+**/.vite/
